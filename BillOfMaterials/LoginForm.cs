@@ -8,19 +8,14 @@ using System.Windows.Forms;
 
 namespace BillOfMaterials
 {
-    public partial class UserControl1 : UserControl
+    public partial class LoginForm : Form
     {
-        public UserControl1()
+        public LoginForm()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void LoginForm_Load(object sender, EventArgs e)
         {
 
         }
