@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BillOfMaterials
 {
@@ -15,8 +16,11 @@ namespace BillOfMaterials
         public Form1()
         {
             InitializeComponent();
+
+         
         }
 
+    
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -34,20 +38,21 @@ namespace BillOfMaterials
 
         private void button5_Click(object sender, EventArgs e)
         {
-            userControl11.Hide();
-            userControl21.Show();
-            userControl21.BringToFront();
-            userControl31.Hide();
-            userControl42.Hide();
+            
+            userControl12.Hide();
+            userControl22.Show();
+            userControl22.BringToFront();
+            userControl32.Hide();
+            userControl41.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            userControl11.Hide();
-            userControl21.Hide();
-            userControl31.Show();
-            userControl42.Hide();
-            userControl31.BringToFront();
+            userControl12.Hide();
+            userControl22.Hide();
+            userControl32.Show();
+            userControl41.Hide();
+            userControl32.BringToFront();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -67,11 +72,11 @@ namespace BillOfMaterials
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            userControl51.Show();
-            userControl11.Hide();
-            userControl21.Hide();
-            userControl31.Hide();
-            userControl42.Hide();
+        userControl22.Show();
+            userControl12.Hide();
+            userControl52.Hide();
+            userControl32.Hide();
+            userControl41.Hide();
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
@@ -86,34 +91,34 @@ namespace BillOfMaterials
 
         private void button4_Click(object sender, EventArgs e)
         {
-            userControl51.Show();
-            userControl51.BringToFront();
-            userControl11.Hide();
-            userControl21.Hide();
-            userControl31.Hide();
-            userControl42.Hide();
+            userControl52.Show();
+            userControl52.BringToFront();
+            userControl12.Hide();
+            userControl22.Hide();
+            userControl32.Hide();
+            userControl41.Hide();
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            userControl11.Show();
-            userControl11.BringToFront();
-            userControl21.Hide();
-            userControl31.Hide();
-            userControl42.Hide();
-            userControl51.Hide();
+            userControl12.Show();
+            userControl12.BringToFront();
+            userControl22.Hide();
+            userControl32.Hide();
+            userControl41.Hide();
+            userControl52.Hide();
         }
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            userControl11.Hide();
+            userControl12.Hide();
        
-            userControl21.Hide();
-            userControl31.Hide();
-            userControl42.Show();
-            userControl42.BringToFront();
-            userControl51.Hide();
+            userControl22.Hide();
+            userControl32.Hide();
+            userControl41.Show();
+            userControl41.BringToFront();
+            userControl52.Hide();
 
         }
 
@@ -126,7 +131,11 @@ namespace BillOfMaterials
         {
 
         }
+        private void addnewproduct_Click(object sender, EventArgs e)
+        {
+            
 
+        }
         private void userControl42_Load_1(object sender, EventArgs e)
         {
 

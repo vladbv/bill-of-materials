@@ -29,141 +29,197 @@ namespace BillOfMaterials
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaterialsUsed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl2));
+            this.pid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.addnewproduct = new System.Windows.Forms.Button();
+            this.editproduct = new System.Windows.Forms.Button();
+            this.deleteproduct = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.searchexpenses = new System.Windows.Forms.Button();
+            this.productsdata = new System.Windows.Forms.DataGridView();
+            this.productrefresh = new System.Windows.Forms.Button();
+            this.pname = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.userControl32 = new BillOfMaterials.UserControl3();
+            ((System.ComponentModel.ISupportInitialize)(this.productsdata)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // pid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.ProductName,
-            this.Amount,
-            this.Price,
-            this.MaterialsUsed});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 71);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(530, 254);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // ProductName
-            // 
-            this.ProductName.HeaderText = "Product Name";
-            this.ProductName.Name = "ProductName";
-            // 
-            // Amount
-            // 
-            this.Amount.HeaderText = "Amount";
-            this.Amount.Name = "Amount";
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            // 
-            // MaterialsUsed
-            // 
-            this.MaterialsUsed.HeaderText = "Materials Used";
-            this.MaterialsUsed.Name = "MaterialsUsed";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(143, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 29);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Search";
+            this.pid.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pid.Location = new System.Drawing.Point(76, 36);
+            this.pid.Name = "pid";
+            this.pid.Size = new System.Drawing.Size(71, 29);
+            this.pid.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(214, 0);
+            this.label1.Location = new System.Drawing.Point(243, -5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 25);
             this.label1.TabIndex = 6;
             this.label1.Text = "PRODUCTS";
             // 
-            // button1
+            // addnewproduct
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(26, 331);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 29);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "ADD NEW";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addnewproduct.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.addnewproduct.Location = new System.Drawing.Point(26, 331);
+            this.addnewproduct.Name = "addnewproduct";
+            this.addnewproduct.Size = new System.Drawing.Size(165, 29);
+            this.addnewproduct.TabIndex = 7;
+            this.addnewproduct.Text = "ADD NEW";
+            this.addnewproduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.addnewproduct.UseVisualStyleBackColor = true;
+            this.addnewproduct.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // editproduct
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(243, 331);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 36);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "EDIT";
-            this.button2.UseVisualStyleBackColor = true;
+            this.editproduct.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.editproduct.Location = new System.Drawing.Point(243, 331);
+            this.editproduct.Name = "editproduct";
+            this.editproduct.Size = new System.Drawing.Size(83, 36);
+            this.editproduct.TabIndex = 8;
+            this.editproduct.Text = "EDIT";
+            this.editproduct.UseVisualStyleBackColor = true;
+            this.editproduct.Click += new System.EventHandler(this.editproduct_Click);
             // 
-            // button3
+            // deleteproduct
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button3.Location = new System.Drawing.Point(368, 334);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 33);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.deleteproduct.BackColor = System.Drawing.Color.Red;
+            this.deleteproduct.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.deleteproduct.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.deleteproduct.Location = new System.Drawing.Point(356, 334);
+            this.deleteproduct.Name = "deleteproduct";
+            this.deleteproduct.Size = new System.Drawing.Size(86, 33);
+            this.deleteproduct.TabIndex = 9;
+            this.deleteproduct.Text = "DELETE";
+            this.deleteproduct.UseVisualStyleBackColor = false;
+            this.deleteproduct.Click += new System.EventHandler(this.deleteproduct_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "By ID",
+            "By Name"});
+            this.comboBox1.Location = new System.Drawing.Point(399, 5);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 13;
+            // 
+            // searchexpenses
+            // 
+            this.searchexpenses.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.searchexpenses.Location = new System.Drawing.Point(377, 36);
+            this.searchexpenses.Name = "searchexpenses";
+            this.searchexpenses.Size = new System.Drawing.Size(165, 29);
+            this.searchexpenses.TabIndex = 14;
+            this.searchexpenses.Text = "SEARCH";
+            this.searchexpenses.UseVisualStyleBackColor = true;
+            this.searchexpenses.Click += new System.EventHandler(this.searchexpenses_Click);
+            // 
+            // productsdata
+            // 
+            this.productsdata.AllowUserToAddRows = false;
+            this.productsdata.AllowUserToDeleteRows = false;
+            this.productsdata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.productsdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.productsdata.Location = new System.Drawing.Point(0, 71);
+            this.productsdata.Name = "productsdata";
+            this.productsdata.ReadOnly = true;
+            this.productsdata.RowTemplate.Height = 25;
+            this.productsdata.Size = new System.Drawing.Size(701, 254);
+            this.productsdata.TabIndex = 16;
+            this.productsdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            // 
+            // productrefresh
+            // 
+            this.productrefresh.Image = ((System.Drawing.Image)(resources.GetObject("productrefresh.Image")));
+            this.productrefresh.Location = new System.Drawing.Point(9, 5);
+            this.productrefresh.Name = "productrefresh";
+            this.productrefresh.Size = new System.Drawing.Size(35, 39);
+            this.productrefresh.TabIndex = 18;
+            this.productrefresh.UseVisualStyleBackColor = true;
+            this.productrefresh.Click += new System.EventHandler(this.productrefresh_Click);
+            // 
+            // pname
+            // 
+            this.pname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.pname.Location = new System.Drawing.Point(169, 36);
+            this.pname.Name = "pname";
+            this.pname.Size = new System.Drawing.Size(178, 29);
+            this.pname.TabIndex = 19;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(76, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 15);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "ID";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(153, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 15);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Product Name";
+            // 
+            // userControl32
+            // 
+            this.userControl32.Location = new System.Drawing.Point(0, 5);
+            this.userControl32.Name = "userControl32";
+            this.userControl32.Size = new System.Drawing.Size(599, 410);
+            this.userControl32.TabIndex = 17;
+            this.userControl32.Load += new System.EventHandler(this.userControl32_Load);
             // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pname);
+            this.Controls.Add(this.productrefresh);
+            this.Controls.Add(this.productsdata);
+            this.Controls.Add(this.searchexpenses);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.deleteproduct);
+            this.Controls.Add(this.editproduct);
+            this.Controls.Add(this.addnewproduct);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.pid);
+            this.Controls.Add(this.userControl32);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(599, 415);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Size = new System.Drawing.Size(738, 415);
+            this.Load += new System.EventHandler(this.UserControl2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.productsdata)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaterialsUsed;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox pid;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button addnewproduct;
+        private System.Windows.Forms.Button editproduct;
+        private System.Windows.Forms.Button deleteproduct;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button searchexpenses;
+        private UserControl3 userControl31;
+        private System.Windows.Forms.DataGridView productsdata;
+        private System.Windows.Forms.Button productrefresh;
+        private System.Windows.Forms.TextBox pname;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private UserControl3 userControl32;
     }
 }

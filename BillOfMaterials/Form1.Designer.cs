@@ -40,11 +40,12 @@ namespace BillOfMaterials
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.userControl11 = new BillOfMaterials.UserControl1();
-            this.userControl21 = new BillOfMaterials.UserControl2();
-            this.userControl31 = new BillOfMaterials.UserControl3();
-            this.userControl42 = new BillOfMaterials.UserControl4();
-            this.userControl51 = new BillOfMaterials.UserControl5();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.userControl41 = new BillOfMaterials.UserControl4();
+            this.userControl52 = new BillOfMaterials.UserControl5();
+            this.userControl32 = new BillOfMaterials.UserControl3();
+            this.userControl22 = new BillOfMaterials.UserControl2();
+            this.userControl12 = new BillOfMaterials.UserControl1();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -187,44 +188,41 @@ namespace BillOfMaterials
             this.label1.Text = "Hello, you are logged in";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // userControl11
+            // userControl41
             // 
-            this.userControl11.BackColor = System.Drawing.SystemColors.Control;
-            this.userControl11.Location = new System.Drawing.Point(211, -1);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(530, 806);
-            this.userControl11.TabIndex = 6;
+            this.userControl41.Location = new System.Drawing.Point(218, -1);
+            this.userControl41.Name = "userControl41";
+            this.userControl41.Size = new System.Drawing.Size(504, 397);
+            this.userControl41.TabIndex = 1;
             // 
-            // userControl21
+            // userControl52
             // 
-            this.userControl21.Location = new System.Drawing.Point(219, -1);
-            this.userControl21.Name = "userControl21";
-            this.userControl21.Size = new System.Drawing.Size(522, 431);
-            this.userControl21.TabIndex = 7;
-            this.userControl21.Load += new System.EventHandler(this.userControl21_Load);
+            this.userControl52.Location = new System.Drawing.Point(218, -1);
+            this.userControl52.Name = "userControl52";
+            this.userControl52.Size = new System.Drawing.Size(674, 410);
+            this.userControl52.TabIndex = 2;
             // 
-            // userControl31
+            // userControl32
             // 
-            this.userControl31.Location = new System.Drawing.Point(211, -1);
-            this.userControl31.Name = "userControl31";
-            this.userControl31.Size = new System.Drawing.Size(530, 470);
-            this.userControl31.TabIndex = 5;
-            this.userControl31.Load += new System.EventHandler(this.userControl31_Load);
+            this.userControl32.Location = new System.Drawing.Point(219, -1);
+            this.userControl32.Name = "userControl32";
+            this.userControl32.Size = new System.Drawing.Size(620, 384);
+            this.userControl32.TabIndex = 3;
             // 
-            // userControl42
+            // userControl22
             // 
-            this.userControl42.Location = new System.Drawing.Point(211, -1);
-            this.userControl42.Name = "userControl42";
-            this.userControl42.Size = new System.Drawing.Size(592, 470);
-            this.userControl42.TabIndex = 9;
-            this.userControl42.Load += new System.EventHandler(this.userControl42_Load_1);
+            this.userControl22.Location = new System.Drawing.Point(218, -1);
+            this.userControl22.Name = "userControl22";
+            this.userControl22.Size = new System.Drawing.Size(738, 437);
+            this.userControl22.TabIndex = 4;
             // 
-            // userControl51
+            // userControl12
             // 
-            this.userControl51.Location = new System.Drawing.Point(219, -1);
-            this.userControl51.Name = "userControl51";
-            this.userControl51.Size = new System.Drawing.Size(606, 431);
-            this.userControl51.TabIndex = 10;
+            this.userControl12.BackColor = System.Drawing.SystemColors.Control;
+            this.userControl12.Location = new System.Drawing.Point(211, -1);
+            this.userControl12.Name = "userControl12";
+            this.userControl12.Size = new System.Drawing.Size(876, 532);
+            this.userControl12.TabIndex = 6;
             // 
             // Form1
             // 
@@ -232,12 +230,12 @@ namespace BillOfMaterials
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(91)))), ((int)(((byte)(164)))));
             this.ClientSize = new System.Drawing.Size(957, 465);
-            this.Controls.Add(this.userControl51);
-            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.userControl12);
+            this.Controls.Add(this.userControl22);
+            this.Controls.Add(this.userControl32);
+            this.Controls.Add(this.userControl52);
+            this.Controls.Add(this.userControl41);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.userControl11);
-            this.Controls.Add(this.userControl42);
-            this.Controls.Add(this.userControl31);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -267,6 +265,12 @@ namespace BillOfMaterials
         private System.Windows.Forms.Button button7;
         private UserControl4 userControl42;
         private UserControl5 userControl51;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private UserControl4 userControl41;
+        private UserControl5 userControl52;
+        private UserControl3 userControl32;
+        private UserControl2 userControl22;
+        private UserControl1 userControl12;
     }
 }
 

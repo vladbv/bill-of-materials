@@ -32,15 +32,12 @@ namespace BillOfMaterials
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.productid = new System.Windows.Forms.TextBox();
+            this.productname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.productdescription = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.backbtnadd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -65,100 +62,77 @@ namespace BillOfMaterials
             this.button3.TabIndex = 6;
             this.button3.Text = "ADD NEW";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(19, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 15);
+            this.label2.Size = new System.Drawing.Size(93, 15);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Product Name";
+            this.label2.Text = "Enter Product ID";
             // 
-            // textBox1
+            // productid
             // 
-            this.textBox1.Location = new System.Drawing.Point(18, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 23);
-            this.textBox1.TabIndex = 8;
+            this.productid.Location = new System.Drawing.Point(18, 69);
+            this.productid.Name = "productid";
+            this.productid.Size = new System.Drawing.Size(62, 23);
+            this.productid.TabIndex = 8;
             // 
-            // textBox2
+            // productname
             // 
-            this.textBox2.Location = new System.Drawing.Point(18, 121);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(79, 23);
-            this.textBox2.TabIndex = 9;
+            this.productname.Location = new System.Drawing.Point(18, 121);
+            this.productname.Name = "productname";
+            this.productname.Size = new System.Drawing.Size(159, 23);
+            this.productname.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(19, 103);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 15);
+            this.label3.Size = new System.Drawing.Size(114, 15);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Product Price";
+            this.label3.Text = "Enter Product Name";
             // 
-            // textBox3
+            // productdescription
             // 
-            this.textBox3.Location = new System.Drawing.Point(18, 177);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(118, 23);
-            this.textBox3.TabIndex = 11;
+            this.productdescription.Location = new System.Drawing.Point(18, 177);
+            this.productdescription.Name = "productdescription";
+            this.productdescription.Size = new System.Drawing.Size(361, 23);
+            this.productdescription.TabIndex = 11;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(19, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 15);
+            this.label4.Size = new System.Drawing.Size(142, 15);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Materials used";
+            this.label4.Text = "Enter Product Description";
             // 
-            // textBox4
+            // backbtnadd
             // 
-            this.textBox4.Location = new System.Drawing.Point(18, 225);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(118, 23);
-            this.textBox4.TabIndex = 13;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 207);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 15);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Amount";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(18, 275);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(118, 23);
-            this.textBox5.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 251);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 15);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Date Created";
+            this.backbtnadd.Image = global::BillOfMaterials.Properties.Resources._23;
+            this.backbtnadd.Location = new System.Drawing.Point(19, 308);
+            this.backbtnadd.Name = "backbtnadd";
+            this.backbtnadd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.backbtnadd.Size = new System.Drawing.Size(75, 40);
+            this.backbtnadd.TabIndex = 13;
+            this.backbtnadd.UseVisualStyleBackColor = true;
+            this.backbtnadd.Click += new System.EventHandler(this.backbtnadd_Click);
             // 
             // UserControl3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.backbtnadd);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.productdescription);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.productname);
+            this.Controls.Add(this.productid);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
@@ -175,14 +149,11 @@ namespace BillOfMaterials
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox productid;
+        private System.Windows.Forms.TextBox productname;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox productdescription;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button backbtnadd;
     }
 }
